@@ -6,7 +6,6 @@ import java.util.*;
 
 public class DriverRepo {
     private Map<Integer, Driver> drivers;
-    List<int>    avaliedDriverIds;
     private static DriverRepo instance;
     private DriverRepo() {
         drivers = new HashMap<>();

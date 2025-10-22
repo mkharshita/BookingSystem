@@ -2,7 +2,6 @@ package service;
 
 import Entity.Driver;
 import Repo.DriverRepo;
-import Repo.RideRepo;
 
 import java.util.Optional;
 
@@ -21,11 +20,11 @@ public class DriverService implements IDriverService {
                 }
             }
         }
+        return instance;
     }
-@Override
-    public boolean updateStatus(int id) {
-        Optional<Driver> driverOptional = driverRepo.findById(id);
-        Driver driver = driverOptional.get();
 
+    @Override
+    public boolean updateStatus(int id) {
+        return false;
     }
 }

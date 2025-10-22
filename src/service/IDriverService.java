@@ -2,6 +2,5 @@ package service;
 
 public interface IDriverService {
 
-    boolean updateStatus();
-
+    boolean updateStatus(int id);
 }
